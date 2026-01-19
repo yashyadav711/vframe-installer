@@ -28,30 +28,26 @@ VFrame is a comprehensive AI agent framework with skills, sub-agents, and workfl
 
 ### Linux / macOS (Bash/Zsh)
 
+**One-liner:**
 ```bash
-# Download and run the installer
-curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh
-chmod +x setup-vframe.sh
-./setup-vframe.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)
 ```
 
-Or one-liner:
+Or download and run:
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)
+curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh && chmod +x setup-vframe.sh && bash setup-vframe.sh
 ```
 
 ### Fish Shell
 
+**One-liner:**
 ```fish
-# One-liner for Fish
-curl -s https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh | bash
+bash -c "(curl -fsSL https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)"
 ```
 
-Or download first:
+Or download and run:
 ```fish
-curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh
-chmod +x setup-vframe.sh
-bash setup-vframe.sh
+curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh && chmod +x setup-vframe.sh && bash setup-vframe.sh
 ```
 
 ### Windows (PowerShell)
