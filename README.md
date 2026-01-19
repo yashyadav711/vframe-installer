@@ -52,13 +52,17 @@ curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-in
 
 ### Windows (PowerShell)
 
+**One-liner:**
 ```powershell
-# Download and run the installer
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.ps1" -OutFile "setup-vframe.ps1"
-.\setup-vframe.ps1
+iex (iwr -Uri "https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.ps1" -UseBasicParsing).Content
 ```
 
-Or one-liner:
+Or download and run:
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.ps1" -OutFile "setup-vframe.ps1"; .\setup-vframe.ps1
+```
+
+Alternative one-liner (older PowerShell):
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.ps1'))
 ```
