@@ -111,13 +111,6 @@ main() {
     git commit -m "Initial commit: $PROJECT_NAME based on VFrame"
     print_success "Initial commit created"
 
-    # Update README with project name
-    if [ -f "README.md" ]; then
-        sed -i.bak "s/VFrame/$PROJECT_NAME/g" README.md 2>/dev/null || \
-        sed -i '' "s/VFrame/$PROJECT_NAME/g" README.md 2>/dev/null || true
-        rm -f README.md.bak
-    fi
-
     echo ""
     print_success "🎉 Project '$PROJECT_NAME' has been set up successfully!"
     echo ""

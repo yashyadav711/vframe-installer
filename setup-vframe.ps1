@@ -109,11 +109,6 @@ function Main {
     git commit -m "Initial commit: $PROJECT_NAME based on VFrame"
     Print-Success "Initial commit created"
 
-    # Update README with project name
-    if (Test-Path "README.md") {
-        (Get-Content "README.md") -replace "VFrame", $PROJECT_NAME | Set-Content "README.md"
-    }
-
     Write-Output ""
     Print-Success "🎉 Project '$PROJECT_NAME' has been set up successfully!"
     Write-Output ""
