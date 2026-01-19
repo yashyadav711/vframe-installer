@@ -42,7 +42,7 @@ curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-in
 
 **One-liner:**
 ```fish
-bash -c "(curl -fsSL https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)"
 ```
 
 Or download and run:
