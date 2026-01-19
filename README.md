@@ -26,7 +26,7 @@ VFrame is a comprehensive AI agent framework with skills, sub-agents, and workfl
 
 ## Quick Start
 
-### Linux / macOS
+### Linux / macOS (Bash/Zsh)
 
 ```bash
 # Download and run the installer
@@ -38,6 +38,20 @@ chmod +x setup-vframe.sh
 Or one-liner:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh)
+```
+
+### Fish Shell
+
+```fish
+# One-liner for Fish
+curl -s https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh | bash
+```
+
+Or download first:
+```fish
+curl -o setup-vframe.sh https://raw.githubusercontent.com/yashyadav711/vframe-installer/main/setup-vframe.sh
+chmod +x setup-vframe.sh
+bash setup-vframe.sh
 ```
 
 ### Windows (PowerShell)
